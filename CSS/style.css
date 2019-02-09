@@ -1,13 +1,18 @@
+body {
+    font: 16px Arial, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
 
   grid-template-areas:
     "...... intro intro intro ....."
     "...... main main main ......"
+    "...... slideshow slideshow slideshow ......"
     "...... item1 item2 item3 ......"
     "...... footer footer footer ......"
 }
@@ -18,6 +23,10 @@
 
 .main {
   grid-area: main;
+}
+
+.slideshow {
+  grid-area: slideshow;
 }
 
 .footer {
@@ -36,16 +45,28 @@
   grid-area: item3;
 }
 
-
-p {
-  font-size: 30px;
-}
-
 .test-item {
   background-color: grey;
-  height: 100px;
   text-align: center;
-  vertical-align: middle;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.point {
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.point-icon {
+  float: left;
+  width: 2em;
+  font-size: 5em;
+}
+
+.point-text {
+
 }
 
 
@@ -60,10 +81,15 @@ p {
     grid-template-areas:
       "intro"
       "main"
+      "slideshow"
       "item1"
       "item2"
       "item3"
       "footer"
+  }
+
+  .point-icon {
+    display: none;
   }
 
 
