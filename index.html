@@ -9,6 +9,7 @@
    <meta name="author" content="Jory Seguin">
    <link rel="stylesheet" type="text/css" href="CSS/style.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <script src="./JS/script.js"></script>
  </head>
 
  <body>
@@ -57,7 +58,18 @@
      </div>
 
      <div class="slideshow">
-       <div class="test-item">slideshow</div>
+       <div class="slideshow-container">
+         <div class="slide">
+           <div id="number-text">1/4</div>
+           <img class="slide-img" src="./images/Coffee-table-Solid-Maka-Wood.jpg" style="width : 30em;">
+           <img class="slide-img" src="./images/foosball-coffee-table-via-thegreenhead.jpg" style="width : 30em;">
+           <img class="slide-img" src="./images/axe-coffee-table-via-mustxhave.com_.jpg" style="width : 30em;">
+           <img class="slide-img" src="./images/nintendo-controller-coffee-table-via-ifitshipitshere.blogspot.com_.jpg" style="width : 30em;">
+           <div class="image-caption">example</div>
+           <div class="prev-btn" onclick="plusDivs(-1)"><i class="fas fa-arrow-alt-circle-left"></i></div>
+           <div class="next-btn" onclick="plusDivs(1)" ><i class="fas fa-arrow-alt-circle-right"></i></div>
+         </div>
+       </div>
      </div>
 
      <div class="item1">

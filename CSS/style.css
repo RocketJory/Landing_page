@@ -69,6 +69,48 @@ body {
 
 }
 
+.slideshow-container {
+  max-width: 50em;
+  position: relative;
+  margin: auto;
+}
+
+.prev-btn, .next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: black;
+  font-size: 2rem;
+}
+
+.prev-btn {
+  left: 0px;
+}
+
+.next-btn {
+  right: 0px;
+}
+
+.slide {
+  width: 30em;
+  margin: auto;
+}
+
+.slide-img {
+  display: none;
+  margin: auto;
+}
+
+.image-caption {
+  text-align: center;
+}
+
+#number-text{
+  float: left;
+  position: absolute;
+  color: grey;
+}
+
 
 @media only screen and (max-width: 600px) {
 
