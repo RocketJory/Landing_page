@@ -4,6 +4,7 @@ window.onload = function() {
   showDivs(slideIndex);
 }
 
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
   document.getElementById('number-text').innerHTML = slideIndex + "/3";
@@ -20,14 +21,4 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-}
-
-function toggleMenu() {
-  var x = document.getElementById("nav-list");
-  if (x.style.display == "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";    
-  }
-
 }

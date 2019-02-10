@@ -39,10 +39,6 @@ body {
   -o-transition: all 0.30s ease-in-out;
 }
 
-#nav-list {
-  display: block;
-}
-
 .topnav .logo {
   font-size: 2.0rem;
   float: left;
@@ -101,7 +97,7 @@ footer .foot-copyright {
   grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 2em;
-  grid-column-gap: 0em;
+  grid-column-gap: 2em;
 
   grid-template-areas:
     "...... intro intro intro ....."
@@ -296,15 +292,9 @@ footer .foot-copyright {
     display: none;
   }
 
-  #nav-list {
-    display: none;
-  }
-
   .topnav ul li {
-    display: block;
-  }
-  .topnav ul {
-    margin-top: 3.5rem;
+    width: 100%;
+    padding: 0;
   }
 
 }
