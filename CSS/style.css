@@ -94,6 +94,11 @@ footer .foot-copyright {
   color: #474747;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 
 
 .container {
@@ -223,14 +228,14 @@ footer .foot-copyright {
 }
 
 .slideshow-container {
-  max-width: 50em;
   position: relative;
   margin: auto;
+  width: 30em;
 }
 
 .prev-btn, .next-btn {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 50%;
   color: var(--sec-color);
   font-size: 2rem;
@@ -238,19 +243,17 @@ footer .foot-copyright {
 
 .prev-btn {
   left: 0px;
+  float: left;
 }
 
 .next-btn {
   right: 0px;
-}
-
-.slide {
-  width: 30em;
-  margin: auto;
+  float: right;
 }
 
 .slide-img {
   display: none;
+  width: 30rem;
   margin: auto;
 }
 
@@ -288,6 +291,21 @@ footer .foot-copyright {
       "footer"
   }
 
+  .form-input {
+    width: 80%;
+  }
+
+  .btn {
+    width: 50%;
+  }
+
+  .slideshow-container {
+    width: 80%;
+  }
+  .slide-img {
+    width: 100%;
+  }
+
   .point-icon {
     display: none;
   }
@@ -321,6 +339,10 @@ footer .foot-copyright {
 
   .foot-items li:hover {
     color: var(--sec-color-highlight);
+  }
+
+  .nav-items {
+    cursor: pointer;
   }
 
   nav .menu {
